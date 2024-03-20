@@ -71,7 +71,7 @@
 
 
 <!--  代码渲染  -->
-<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/prism_Okaidia.css" />
 <link rel="stylesheet" href="/css/typo.css" />
 <!-- 文章页 -->
 <body class="is-loading">
@@ -88,12 +88,12 @@
             <ul class="menu links" >
 			<!-- Homepage  主页  --> 
 			<li >
-	            <a href="/" rel="nofollow">主页</a>
+	            <a href="/" rel="nofollow">主页面</a>
 	        </li>
 			<!-- categories_name  分类   --> 
 	        
 	        <li class="active">
-	            <a href="#s1">分类</a>
+	            <a href="#s1">文章分类</a>
 	                    <ul class="submenu">
 	                        <li>
 	                        <a class="category-link" href="/categories/%E6%B8%97%E9%80%8F%E9%9D%B6%E5%9C%BA/">渗透靶场</a>
@@ -101,6 +101,14 @@
 	        </li>
 	        
 	        <!-- archives  归档   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">归档</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="archive-link" href="/archives/2024/03/">March 2024</a>
+	                    </ul>
+	        </li>
 	        
 	        
 		        <!-- Pages 自定义   -->
@@ -112,14 +120,8 @@
 		        </li>
 		        
 		        <li>
-		            <a href="/gallery/" title="图库">
-		                图库
-		            </a>
-		        </li>
-		        
-		        <li>
-		            <a href="/tag/" title="标签">
-		                标签
+		            <a href="/tag/" title="关于我们">
+		                关于我们
 		            </a>
 		        </li>
 		        
@@ -128,12 +130,6 @@
             </ul>
             <!-- icons 图标   -->
 			<ul class="icons">
-                    
-                    <li>
-                        <a title="ghost" href="https://blog.csdn.net/m0_62102520" target="_blank" rel="noopener">
-                            <i class="icon fa fa-ghost"></i>
-                        </a>
-                    </li>
                     
                     <li>
                         <a title="weixin" href="https://mp.weixin.qq.com/s?__biz=MzkwMzY2MTcwMw==&mid=2247484184&idx=1&sn=57bd70c53ac337874d556081d58299dc&chksm=c09392f0f7e41be688f28e33dba8f2ad7fa6cb465f78ad3e7e5a9c7143a0313ccb4e4815aa76&token=148826876&lang=zh_CN#rd" target="_blank" rel="noopener">
@@ -175,13 +171,26 @@
 <h2 id="1x02-web信息收集"><a href="#1x02-web信息收集" class="headerlink" title="1x02 web信息收集"></a>1x02 web信息收集</h2><blockquote>
 <p>继续找找还是老套路 各种信息识别</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Web 服务器</span><br><span class="line">Apache HTTP Server 2.4.18</span><br><span class="line">操作系统</span><br><span class="line">Ubuntu</span><br><span class="line">JavaScript 库</span><br><span class="line">jQuery 3.3.1</span><br><span class="line">用户界面（UI）框架</span><br><span class="line">Bootstrap 3.4.0</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">Web 服务器
+Apache HTTP Server 2.4.18
+操作系统
+Ubuntu
+JavaScript 库
+jQuery 3.3.1
+用户界面（UI）框架
+Bootstrap 3.4.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>对味了,扫个目录吧</p>
 </blockquote>
 <p><img src="https://img2.imgtp.com/2024/03/14/6fvD0G5n.png"></p>
 <blockquote>
-<p>扫完目录之后发现了 一些新东西 但是先等等 我们不放过任何蛛丝马迹<br>一眼定睛  源代码:<br> <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">   Note to self, remember username!</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">   Username: R1ckRul3s</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> --&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>扫完目录之后发现了 一些新东西 但是先等等 我们不放过任何蛛丝马迹<br>一眼定睛  源代码:<br> <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!--
+
+   Note to self, remember username!
+
+   Username: R1ckRul3s
+
+ --></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 </blockquote>
 <h2 id="1x03-web利用"><a href="#1x03-web利用" class="headerlink" title="1x03 web利用"></a>1x03 web利用</h2><blockquote>
 <p>得到一个用户名 才开始猜测可能是ssh的 试了一下发现ssh只能允许私钥连接<br>回到目录 找找别的资产robots.txt 老目录了 看一眼<br>Wubbalubbadubdub<br>又是口头禅<br>看看login.php 需要登陆</p>
@@ -203,7 +212,29 @@
 <li>portal.php<br>其他都没啥用 看看portal</li>
 </ul>
 </blockquote>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">contains</span>(<span class="params"><span class="variable">$str</span>, <span class="keyword">array</span> <span class="variable">$arr</span></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">foreach</span> (<span class="variable">$arr</span> <span class="keyword">as</span> <span class="variable">$a</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="title function_ invoke__">stripos</span>(<span class="variable">$str</span>, <span class="variable">$a</span>) !== <span class="literal">false</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Cant use cat</span></span><br><span class="line"><span class="variable">$cmds</span> = <span class="keyword">array</span>(<span class="string">&quot;cat&quot;</span>, <span class="string">&quot;head&quot;</span>, <span class="string">&quot;more&quot;</span>, <span class="string">&quot;tail&quot;</span>, <span class="string">&quot;nano&quot;</span>, <span class="string">&quot;vim&quot;</span>, <span class="string">&quot;vi&quot;</span>);</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_POST</span>[<span class="string">&quot;command&quot;</span>])) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="title function_ invoke__">contains</span>(<span class="variable">$_POST</span>[<span class="string">&quot;command&quot;</span>], <span class="variable">$cmds</span>)) &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;&lt;/br&gt;&lt;p&gt;&lt;u&gt;Command disabled&lt;/u&gt; to make it hard for future &lt;b&gt;PICKLEEEE RICCCKKKK&lt;/b&gt;.&lt;/p&gt;&lt;img src=&#x27;assets/fail.gif&#x27;&gt;&quot;</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="variable">$output</span> = <span class="title function_ invoke__">shell_exec</span>(<span class="variable">$_POST</span>[<span class="string">&quot;command&quot;</span>]);</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;&lt;/br&gt;&lt;pre&gt;<span class="subst">$output</span>&lt;/pre&gt;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;!-- Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0== --&gt;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">function</span> <span class="token function-definition function">contains</span><span class="token punctuation">(</span><span class="token variable">$str</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$arr</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$arr</span> <span class="token keyword">as</span> <span class="token variable">$a</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">stripos</span><span class="token punctuation">(</span><span class="token variable">$str</span><span class="token punctuation">,</span> <span class="token variable">$a</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token constant boolean">false</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">return</span> <span class="token constant boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">// Cant use cat</span>
+<span class="token variable">$cmds</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"cat"</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">"head"</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">"more"</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">"tail"</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">"nano"</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">"vim"</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">"vi"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">isset</span><span class="token punctuation">(</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"command"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"command"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">$cmds</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;/br>&lt;p>&lt;u>Command disabled&lt;/u> to make it hard for future &lt;b>PICKLEEEE RICCCKKKK&lt;/b>.&lt;/p>&lt;img src='assets/fail.gif'>"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+        <span class="token variable">$output</span> <span class="token operator">=</span> <span class="token function">shell_exec</span><span class="token punctuation">(</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"command"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">"&lt;/br>&lt;pre><span class="token interpolation"><span class="token variable">$output</span></span>&lt;/pre>"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token delimiter important">?></span></span>
+<span class="token comment">&lt;!-- Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0== --></span>
+ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>这个是显示了ban了什么命令<br>最后一串多层base64  解出来是 rabbit hole…，没啥用 激动半天</p>
 </blockquote>
@@ -216,7 +247,11 @@
 <h1 id="4x01-提权又不像提权"><a href="#4x01-提权又不像提权" class="headerlink" title="4x01 提权又不像提权"></a>4x01 提权又不像提权</h1><blockquote>
 <p>其实第二个盲猜就在 root下<br>又扯到linux 提权了  直接sudo -l 先看看 </p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Matching Defaults entries for www-data on ip-10-10-151-49.eu-west-1.compute.internal:</span><br><span class="line">    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin</span><br><span class="line"></span><br><span class="line">User www-data may run the following commands on ip-10-10-151-49.eu-west-1.compute.internal:</span><br><span class="line">    (ALL) NOPASSWD: ALL</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Matching Defaults entries <span class="token keyword">for</span> www-data on ip-10-10-151-49.eu-west-1.compute.internal:
+    env_reset, mail_badpass, <span class="token assign-left variable">secure_path</span><span class="token operator">=</span>/usr/local/sbin<span class="token punctuation">\</span>:/usr/local/bin<span class="token punctuation">\</span>:/usr/sbin<span class="token punctuation">\</span>:/usr/bin<span class="token punctuation">\</span>:/sbin<span class="token punctuation">\</span>:/bin<span class="token punctuation">\</span>:/snap/bin
+
+User www-data may run the following commands on ip-10-10-151-49.eu-west-1.compute.internal:
+    <span class="token punctuation">(</span>ALL<span class="token punctuation">)</span> NOPASSWD: ALL<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>咳咳 这还提个damn 啊我就是自由的王 任意 遨游 看到all了吗?看到了吗?那是我驰骋江湖的名片啊…..</p>
 </blockquote>
